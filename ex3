@@ -1,0 +1,12 @@
+users = ['Admin', 'Guest', 'User', 'Bot']
+
+#Меняем user на Moderator через индекс
+users[2] = 'Moderator'
+
+#Вместо Bot аписываем SuperAdmin через отриц индекс
+users[-1] =  'SuperAdmin'
+
+#Добавляем в список нового пользователя
+users = users + ['Newbie']
+
+print(f"Итоговый список пользователей: {users}")
