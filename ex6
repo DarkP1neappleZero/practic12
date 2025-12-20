@@ -1,0 +1,13 @@
+word = input("Введите слово: ")
+
+#Преобразуем строку в список символов с помощью list()
+char_list = list(word)
+
+#Создаем второй список, используем срез
+reversed_list = char_list[::-1]
+
+#Сравниваем два списка
+if char_list == reversed_list:
+    print("Это палиндром")
+else:
+    print("Не палиндром")
