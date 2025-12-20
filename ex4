@@ -3,6 +3,7 @@ marks = [5, 4, 3, 5, 2, 5, 4, 3, 5, 5]
 count_5 = 0
 count_2 = 0
 
+#Перебираем оценки
 for mark in marks:
     if mark == 5:
         count_5 += 1
