@@ -1,0 +1,17 @@
+numbers = [10, 20, 30, 40, 50]
+
+user_number = int(input("Введите число для поиска: "))
+
+#Флаг, который показывает, нашли мы число или нет
+found = False
+
+#Перебираем индексы от 0 до последнего
+for i in range(len(numbers)):
+    if numbers[i] == user_number:
+        print(f"Число {user_number} найдено на позиции {i}")
+        found = True
+        break
+
+#Число не нашли
+if not found:
+    print("Нет такого числа")
